@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class ReviewAnalysis
 {
@@ -31,12 +32,26 @@ public class ReviewAnalysis
 	 */
 	public double getAverageRating()
 	{
-		double total = 0, avg;
+		double total = 0;
 		for(int i = 0; i < numReviewsFilled; i++)
 		{
 			Review r = allReviews[i];
 			total += r.getRating();
 		}
 		return total / allReviews.length;
+	}
+	
+	public ArrayList<String> collectComments()
+	{
+		ArrayList<String> list = new ArrayList<String>();
+		for(int i = 0; i < numReviewsFilled; i++)
+		{			
+			String comment = allReviews[i].getComment();
+			if(comment.indexOf("!") > -1)
+			{
+				list.add(comment);
+			}			
+		}
+		return list;
 	}
 }
