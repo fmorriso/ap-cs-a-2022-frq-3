@@ -41,6 +41,10 @@ public class ReviewAnalysis
 		return total / allReviews.length;
 	}
 	
+	/**
+	 * <b>Purpose:</b> Collects a list of comments that have an asterisk in them.
+	 * @return
+	 */
 	public ArrayList<String> collectComments()
 	{
 		ArrayList<String> list = new ArrayList<String>();
@@ -48,8 +52,14 @@ public class ReviewAnalysis
 		{			
 			String comment = allReviews[i].getComment();
 			if(comment.indexOf("!") > -1)
-			{
-				list.add(comment);
+			{				
+				int lth = comment.length();
+				String last = comment.substring(lth-1);				
+				if(!(last.equals("!") || last.equals(".")))
+				{
+					comment += ".";
+				}					
+				list.add(i + "-" + comment);
 			}			
 		}
 		return list;

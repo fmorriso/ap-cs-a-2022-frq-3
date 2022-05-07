@@ -14,6 +14,11 @@ public class Driver
 		ra.addReview(new Review(2, "Poor! Bad."));
 		ra.addReview(new Review(3, ""));
 		
+		// Part A:
 		System.out.format("The average rating = %.1f%n", ra.getAverageRating());
+		
+		// Part B:
+		System.out.println("Collected comments:");
+		System.out.println(ra.collectComments());
 	}
 }
