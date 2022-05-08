@@ -1,3 +1,8 @@
+/**
+ * 
+ * @author Fred Morrison
+ *
+ */
 import java.util.*;
 
 public class ReviewAnalysis

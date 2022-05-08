@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author Fred Morrison
+ *
+ */
 public class Review
 {
 	private int rating;
