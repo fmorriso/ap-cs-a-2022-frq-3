@@ -47,7 +47,7 @@ public class ReviewAnalysis
 	}
 	
 	/**
-	 * <b>Purpose:</b> Collects a list of comments that have an asterisk in them.
+	 * <b>Purpose:</b> Collects a list of comments that have an exclamation point in them.
 	 * @return
 	 */
 	public ArrayList<String> collectComments()
