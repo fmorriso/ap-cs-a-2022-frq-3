@@ -48,7 +48,7 @@ public class ReviewAnalysis
 	
 	/**
 	 * <b>Purpose:</b> Collects a list of comments that have an exclamation point in them.
-	 * @return
+	 * @return - an ArrayList<String> of selective comments, patched where necessary to insure they end with a period.
 	 */
 	public ArrayList<String> collectComments()
 	{
