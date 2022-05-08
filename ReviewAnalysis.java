@@ -43,7 +43,7 @@ public class ReviewAnalysis
 			Review r = allReviews[i];
 			total += r.getRating();
 		}
-		return total / allReviews.length;
+		return total / numReviewsFilled;
 	}
 	
 	/**
