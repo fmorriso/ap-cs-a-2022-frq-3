@@ -71,7 +71,8 @@ public class ReviewAnalysis
 			if(comment.indexOf("!") > -1)
 			{				
 				int lth = comment.length();
-				String last = comment.substring(lth-1);				
+				String last = comment.substring(lth-1);		
+				// does it end with an exclamation mark or a period ?
 				if(!(last.equals("!") || last.equals(".")))
 				{
 					comment += ".";
