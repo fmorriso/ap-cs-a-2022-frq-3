@@ -16,6 +16,17 @@ public class ReviewAnalysis
 		numReviewsFilled = 0;
 	}
 	
+	/**
+	 * <b>Purpose:</b> Adds a review to the array of reviews, if there is room to add it.
+	 * <p>
+	 * <b>Preconditions:</b>
+	 * <ul>
+	 * <li>The <code>allReviews</code> array has been created.
+	 * <li>The <code>numReviewsFilled</code> value has an accurate count of how many 
+	 * slots of the <code>allReviews</code> array have already been filled.
+	 * </ul>
+	 * @param r - a properly initialized instance of the <code>Review</code> class.
+	 */
 	public void addReview(Review r)
 	{
 		if(numReviewsFilled < allReviews.length)
